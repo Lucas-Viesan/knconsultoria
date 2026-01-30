@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Karla Nachtajler - Mentoria de Carreira Elite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E40AF",
+                        "secondary": "#3d9cf5",
+                        "accent": "#C19A5B", // Gold from reference
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .step-line::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: 40px;
+                bottom: -20px;
+                width: 2px;
+                background-image: linear-gradient(to bottom, #1E40AF, transparent);
+                z-index: 0;
+            }
+            .step-line-last::before {
+                display: none;
+            }
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-slate-900 font-sans">
+<div class="max-w-[430px] mx-auto bg-white min-h-screen relative shadow-2xl overflow-x-hidden">
+<nav class="sticky top-0 z-[100] bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-accent font-extrabold text-xl tracking-tighter">KN</span>
+<div class="h-8 w-[1px] bg-slate-200 mx-1"></div>
+<div class="flex flex-col leading-none">
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-800">Karla</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-800">Nachtajler</span>
+</div>
+</div>
+<button class="text-accent">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<section class="relative min-h-[700px] flex items-center px-6 pt-12 pb-20 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img
+      alt="Karla Nachtajler"
+      class="w-full h-full object-cover object-center scale-105"
+      src="knp.jpg"
+    />
+    <!-- Overlay ainda mais leve -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-black/5"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 w-full max-w-lg space-y-5 mt-72 text-left">
+ 
+
+    <!-- Title (MENOR E MAIS LEVE) -->
+    <h1 class="text-3xl md:text-4xl font-medium leading-snug text-white/85">
+      Te ajudo a transformar sua trajetória no
+      <span class="block font-bold text-[#E6C17A] mt-1">
+        Mercado Financeiro
+      </span>
+    </h1>
+
+<!-- Buttons -->
+<div class="flex flex-col md:flex-row gap-3 justify-start mt-5">
+  <button
+    class="w-full md:w-56 bg-[#E6C17A] text-white font-semibold py-3.5 rounded-xl shadow-md shadow-accent/20 text-sm whitespace-nowrap"
+  >
+    Agendar mentoria
+  </button>
+
+  <button
+    class="w-full md:w-56 bg-white/10 border border-white/30 text-white/90 font-semibold py-3.5 rounded-xl backdrop-blur-md text-sm whitespace-nowrap"
+  >
+    Conheça minha história
+  </button>
+</div>
+
+
+    <!-- Social Proof (mais discreto) -->
+
+    <div
+  class="p-5 rounded-2xl bg-black/35 backdrop-blur-lg border border-white/10 mt-8 max-w-[380px] mx-auto text-center"
+>
+  <!-- Texto -->
+  <h3 class="text-3xl font-bold text-[#E6C17A] leading-none">
+    +200 sonhos
+  </h3>
+  <p class="text-white/60 text-sm mt-1">
+    transformados em crachás
+  </p>
+
+  <!-- Fotos + estrelas -->
+  <div class="flex items-center justify-center gap-4 mt-4">
+    <!-- Avatars -->
+    <div class="flex -space-x-3">
+      <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden">
+        <img
+          class="object-cover w-full h-full"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"
+        />
+      </div>
+
+      <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-300 overflow-hidden">
+        <img
+          class="object-cover w-full h-full"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5YvRIpD88lWyjuO-bXCArcVBHo365tUXdkltpHU2AFxQTLmHxT1ceWRg4UPgq3kJgZrD2m3wdO1mOKeMmr7P5q7KpNTjVcIGcWTDtbf-fXaCptJm396RTOADT7cRe5v9slk2UKSsyr8Pqompz1efgmAvlFV1ki2kxebX2L2384RsvS5fKofaFUaxnaL5uT_LaJ4tZ_XXeDwUGD056m8s5zNSFBgaxXheK521SYAvY_T0Ly6Q2SYy0iI1avT4flvRKtJBS4lpFA"
+        />
+      </div>
+
+      <div class="size-10 rounded-full border-2 border-slate-800 bg-accent flex items-center justify-center text-[11px] text-white font-bold">
+        +196
+      </div>
+    </div>
+
+    <!-- Estrelas -->
+    <div class="flex flex-col items-start">
+      <div class="flex gap-0.5 text-accent leading-none">
+        <span class="material-symbols-outlined text-[14px]">star</span>
+        <span class="material-symbols-outlined text-[14px]">star</span>
+        <span class="material-symbols-outlined text-[14px]">star</span>
+        <span class="material-symbols-outlined text-[14px]">star</span>
+        <span class="material-symbols-outlined text-[14px]">star</span>
+      </div>
+      <span class="text-[9px] font-semibold text-white/45 tracking-widest uppercase">
+        Sucesso
+      </span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+<section class="px-6 py-16 bg-white" id="para-quem">
+<div class="text-center mb-10">
+<h2 class="text-2xl font-bold mb-2">Você se sente assim?</h2>
+<p class="text-slate-500 text-sm">Obstáculos que impedem seu crescimento no mercado.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="bg-white p-6 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-l-4 border-accent">
+<span class="material-symbols-outlined text-accent mb-2">person_off</span>
+<h3 class="font-bold text-slate-800">Invisibilidade</h3>
+<p class="text-sm text-slate-500 mt-1">Sente que seu currículo nunca é selecionado, mesmo tendo as competências certas.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-2">psychology_alt</span>
+<h3 class="font-bold text-slate-800">Insegurança em Entrevistas</h3>
+<p class="text-sm text-slate-500 mt-1">O nervosismo trava seu desempenho diante de gestores de grandes bancos.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary mb-2">map</span>
+<h3 class="font-bold text-slate-800">Falta de Direcionamento</h3>
+<p class="text-sm text-slate-500 mt-1">Não sabe qual área do mercado financeiro combina com seu perfil e ambições.</p>
+</div>
+</div>
+</section>
+<section class="px-6 py-20 bg-primary text-white relative overflow-hidden" id="sobre">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[200px]">work</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-3xl font-extrabold mb-8 leading-tight">Por que confiar em mim para sua carreira?</h2>
+<div class="space-y-6 text-white/90 leading-relaxed">
+<p class="text-lg">Sou <span class="font-bold underline decoration-accent">Karla Nachtajler</span>, mentora de carreira em Bancos e Assessora de Investimentos AAA Santander.</p>
+<p>Atuo há 13 anos no mercado financeiro, com uma trajetória construída dentro de grandes instituições bancárias, onde desenvolvi minha carreira até a gestão de pessoas.</p>
+<p>Sou Administradora, formada em Coaching, com Pós-graduação em Gestão de Pessoas pela FGV e MBA em Corporate Banking.</p>
+<p>Na mentoria, apoio pessoas que desejam ingressar, crescer ou se reposicionar no mercado financeiro, transformando potencial em performance e sonhos em uma carreira sólida e estratégica.</p>
+<div class="pt-4 space-y-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent fill-current">verified</span>
+<span class="text-sm font-semibold">Expertise Comprovada</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent fill-current">verified</span>
+<span class="text-sm font-semibold">Abordagem Prática</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="resultados">
+<div class="px-6">
+<h2 class="text-2xl font-bold mb-10 text-center">Resultados &amp; Método</h2>
+<div class="grid grid-cols-4 gap-2 mb-12">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" src="case.jpg"/>
+</div>
+<div class="col-span-2 rounded-2xl overflow-hidden shadow-md aspect-video">
+<img class="w-full h-full object-cover" src="case.jpg"/>
+</div>
+<div class="col-span-1 rounded-2xl overflow-hidden shadow-md aspect-square">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5YvRIpD88lWyjuO-bXCArcVBHo365tUXdkltpHU2AFxQTLmHxT1ceWRg4UPgq3kJgZrD2m3wdO1mOKeMmr7P5q7KpNTjVcIGcWTDtbf-fXaCptJm396RTOADT7cRe5v9slk2UKSsyr8Pqompz1efgmAvlFV1ki2kxebX2L2384RsvS5fKofaFUaxnaL5uT_LaJ4tZ_XXeDwUGD056m8s5zNSFBgaxXheK521SYAvY_T0Ly6Q2SYy0iI1avT4flvRKtJBS4lpFA"/>
+</div>
+<div class="col-span-1 rounded-2xl overflow-hidden shadow-md bg-primary flex items-center justify-center text-white font-bold text-[10px] text-center p-1">
+                        +200<br/>CASES
+                    </div>
+</div>
+<div class="space-y-10">
+<div class="relative flex gap-6 step-line">
+<div class="z-10 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-lg">1</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800">Diagnóstico de Perfil</h3>
+<p class="text-slate-500 text-sm mt-1">Mapeamento profundo das suas competências e lacunas para o mercado.</p>
+</div>
+</div>
+<div class="relative flex gap-6 step-line">
+<div class="z-10 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-lg">2</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800">Estratégia &amp; Branding</h3>
+<p class="text-slate-500 text-sm mt-1">LinkedIn e currículo otimizados para atrair os maiores players.</p>
+</div>
+</div>
+<div class="relative flex gap-6 step-line">
+<div class="z-10 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-lg">3</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800">Simulação Intensiva</h3>
+<p class="text-slate-500 text-sm mt-1">Treinamento real de entrevistas e resolução de cases técnicos.</p>
+</div>
+</div>
+<div class="relative flex gap-6 step-line-last">
+<div class="z-10 flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-lg">4</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800">Mentoria &amp; Acompanhamento</h3>
+<p class="text-slate-500 text-sm mt-1">Suporte na negociação salarial e durante os primeiros 30 dias.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light" id="depoimentos">
+<div class="px-6">
+<h2 class="text-2xl font-extrabold text-navy-bold mb-10 leading-tight">
+                    O que dizem os novos talentos do Mercado Financeiro
+                </h2>
+<div class="flex overflow-x-auto gap-4 pb-8 px-1 snap-x hide-scrollbar">
+<div class="min-w-[300px] bg-white p-6 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.05)] snap-center border border-slate-100">
+<div class="flex gap-0.5 text-accent mb-4">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "A mentoria da Karla foi o divisor de águas. Eu não conseguia passar da primeira fase, e com o direcionamento dela, conquistei minha vaga dos sonhos em menos de 2 meses."
+                        </p>
+<div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+<div class="size-12 rounded-full overflow-hidden bg-slate-200 shrink-0">
+<img alt="Sucesso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-slate-800 text-sm truncate">Lucas Silveira</h4>
+<div class="flex items-center gap-1.5">
+<span class="text-[10px] font-medium text-slate-500 truncate">Analista no BTG Pactual</span>
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+</div>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] bg-white p-6 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.05)] snap-center border border-slate-100">
+<div class="flex gap-0.5 text-accent mb-4">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "O suporte na preparação para os cases técnicos foi impecável. Senti total confiança durante o processo seletivo e hoje estou onde sempre quis estar."
+                        </p>
+<div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+<div class="size-12 rounded-full overflow-hidden bg-slate-200 shrink-0">
+<img alt="Sucesso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5YvRIpD88lWyjuO-bXCArcVBHo365tUXdkltpHU2AFxQTLmHxT1ceWRg4UPgq3kJgZrD2m3wdO1mOKeMmr7P5q7KpNTjVcIGcWTDtbf-fXaCptJm396RTOADT7cRe5v9slk2UKSsyr8Pqompz1efgmAvlFV1ki2kxebX2L2384RsvS5fKofaFUaxnaL5uT_LaJ4tZ_XXeDwUGD056m8s5zNSFBgaxXheK521SYAvY_T0Ly6Q2SYy0iI1avT4flvRKtJBS4lpFA"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-slate-800 text-sm truncate">Beatriz Mendes</h4>
+<div class="flex items-center gap-1.5">
+<span class="text-[10px] font-medium text-slate-500 truncate">Private Banking no Itaú</span>
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+</div>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] bg-white p-6 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.05)] snap-center border border-slate-100">
+<div class="flex gap-0.5 text-accent mb-4">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "A Karla tem uma visão que ninguém mais tem sobre o que os bancos buscam. O método dela é prático, direto ao ponto e focado em resultados reais."
+                        </p>
+<div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+<div class="size-12 rounded-full overflow-hidden bg-slate-200 shrink-0">
+<img alt="Sucesso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5YvRIpD88lWyjuO-bXCArcVBHo365tUXdkltpHU2AFxQTLmHxT1ceWRg4UPgq3kJgZrD2m3wdO1mOKeMmr7P5q7KpNTjVcIGcWTDtbf-fXaCptJm396RTOADT7cRe5v9slk2UKSsyr8Pqompz1efgmAvlFV1ki2kxebX2L2384RsvS5fKofaFUaxnaL5uT_LaJ4tZ_XXeDwUGD056m8s5zNSFBgaxXheK521SYAvY_T0Ly6Q2SYy0iI1avT4flvRKtJBS4lpFA"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-slate-800 text-sm truncate">Ricardo Fontes</h4>
+<div class="flex items-center gap-1.5">
+<span class="text-[10px] font-medium text-slate-500 truncate">Investment Banking XP</span>
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-1.5 mt-2">
+<div class="size-1.5 rounded-full bg-primary"></div>
+<div class="size-1.5 rounded-full bg-slate-200"></div>
+<div class="size-1.5 rounded-full bg-slate-200"></div>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-slate-900 text-white text-center rounded-t-[40px]" id="contato">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined text-accent text-5xl fill-current">stars</span>
+</div>
+<h2 class="text-3xl font-extrabold mb-4 leading-tight">O próximo crachá pode ser o seu.</h2>
+<p class="text-slate-400 mb-10 max-w-[280px] mx-auto text-sm">Vagas limitadas para garantir o acompanhamento personalizado que você merece.</p>
+<button class="w-full bg-accent hover:bg-[#E6C17A] text-white font-bold py-5 rounded-2xl shadow-[0_0_20px_rgba(30,64,175,0.4)] transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="text-lg">Quero minha Mentoria</span>
+<span class="material-symbols-outlined">trending_up</span>
+</button>
+<p class="mt-8 text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Início Imediato • 100% Online</p>
+</section>
+
+</div>
+
+</body></html>
