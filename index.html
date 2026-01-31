@@ -4,6 +4,20 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Karla Nachtajler - Mentoria de Carreira Elite</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    function openWhatsapp(){
+    const phone = "5513981087220"
+    const message = `Olá Karla! Tudo bem?
+
+Vim através do seu site e me identifiquei com o seu trabalho.
+Gostaria de conversar sobre a mentoria em carreira bancária e entender os próximos passos, pois tenho interesse em ingressar ou crescer no mercado financeiro.
+Podemos conversar?`;
+     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+    }
+
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -100,6 +114,7 @@
 <!-- Buttons -->
 <div class="flex flex-col md:flex-row gap-3 justify-start mt-5">
   <button
+    onclick="openWhatsapp()"
     class="w-full md:w-56 bg-[#E6C17A] text-white font-semibold py-3.5 rounded-xl shadow-md shadow-accent/20 text-sm whitespace-nowrap"
   >
     Agendar mentoria
