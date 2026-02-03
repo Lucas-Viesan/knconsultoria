@@ -30,20 +30,20 @@
     </script>
 <style type="text/tailwindcss">
         @layer utilities {
-            .step-line::before {
-                content: '';
+           .step-line::before {
+                content: "";
                 position: absolute;
-                left: 24px;
-                top: 48px;
-                bottom: -24px;
+                top: 2rem;              /* começa logo abaixo do círculo */
+                left: 16px;             /* centro do círculo (size-8 = 32px) */
                 width: 2px;
-                background-color: #1E40AF;
-                opacity: 0.2;
-                z-index: 0;
-            }
+                height: calc(100% - 2rem);
+                background-color: theme('colors.accent'); /* dourado */
+                }
+
             .step-line-last::before {
-                display: none;
+            display: none;
             }
+
             .timeline-line::before {
                 content: '';
                 position: absolute;
@@ -107,26 +107,33 @@
 <img alt="Karla Nachtajler" class="w-full h-full object-cover object-center" src="capa.jpg"/>
 <div class="absolute inset-0 hero-overlay"></div>
 </div>
+<div class="relative z-10 w-full space-y-4 mt-10">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md">
+<div class="size-2 rounded-full bg-accent"></div>
+<span class="text-[10px] font-bold text-white uppercase tracking-widest">Mentoria de Carreira</span>
+</div>
 <div class="relative z-10 w-full space-y-8 mt-10">
-<h1 class="text-4xl font-bold leading-[1.1] text-white/75">
+<h1 class="text-4xl font-serif  font-bold leading-[1.1] text-white/85">
   Te ajudo a transformar sua trajetória no
-  <span class="font-serif text-[#E6C17A]"> Mercado Financeiro</span>
+  <span class="font-serif font-bold text-accent"> mercado financeiro</span>
 </h1>
 
 
 <div class="flex flex-col gap-3">
-<button class="w-full bg-accent hover:bg-[#E6C17A] text-white font-bold py-4 rounded-xl shadow-lg shadow-accent/20 text-base">
+<button class="w-full  bg-accent hover:bg-[#E6C17A] text-white font-medium fonte-Inter py-3 rounded-3xl shadow-lg shadow-accent/20 text-base">
                         Agendar mentoria
                     </button>
-<button class="w-full bg-white/10 border-2 border-white/40 text-white font-bold py-4 rounded-xl text-base backdrop-blur-sm">
-                        Conheça minha história
+<button class="w-full bg-white/10 hover:bg-white/20 border-2 border-white/40 text-white font-medium fonte-Inter py-3 rounded-3xl text-base backdrop-blur-sm">
+                        Conheça mais
                     </button>
 </div>
-<div class="p-4 rounded-3xl bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 mt-8">
-<h3 class="text-2xl font-bold text-accent">+200 sonhos</h3>
-<p class="text-white/70 text-sm mt-1 mb-4">transformados em crachás</p>
+<div class="w-full p-4 rounded-3xl bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 mt-8">
+
+<h3 class="text-2xl font-bold fonte-Inter text-accent">+200 sonhos</h3>
+<p class="text-white/70 text-sm fonte-Inter mt-1 mb-4">transformados em crachás</p>
 <div class="flex items-center justify-between">
 <div class="flex -space-x-3">
+<div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
 <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
 <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
 <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
@@ -208,12 +215,17 @@
 </div>
 </section>
 <section class="px-6 py-20 bg-primary text-white relative" id="sobre">
-<h2 class="text-2xl font-bold mb-10 leading-tight text-center">Por que confiar em mim para sua carreira?</h2>
+<h2 class="text-2xl font-bold fonte-Inter mb-10 leading-tight text-center">Por que confiar em mim para sua carreira?</h2>
 <div class="grid grid-cols-[1fr_1.8fr] gap-6 items-start">
 <div class="flex flex-col">
-<div class="rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl bg-navy-bold aspect-[4/5]">
-<img alt="Karla Nachtajler" class="w-full h-full object-cover" src="perfil.jpg"/>
+<div class="rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl bg-navy-bold aspect-[3/4] w-full max-w-md">
+  <img
+    alt="Karla Nachtajler"
+    class="w-full h-full object-cover"
+    src="perfil.jpg"
+  />
 </div>
+
 <div class="mt-4">
 <h3 class="font-bold text-sm leading-tight text-white">Karla Nachtajler</h3>
 <p class="text-accent text-[9px] font-bold uppercase tracking-wider mt-1">Mentora de Carreira & Assessora de Investimentos </p>
@@ -251,6 +263,7 @@
 </div>
 </div>
 </section>
+
 <section class="py-20 bg-white" id="resultados">
 <div class="px-6 text-center mb-10">
 <span class="text-accent text-[10px] font-bold uppercase tracking-[0.2em]">Casos de Sucesso</span>
@@ -426,7 +439,7 @@
                         03
                     </div>
 <div class="pt-0.5 bg-slate-50 p-5 rounded-2xl border border-primary/10 shadow-sm -ml-2 -mt-2">
-<h3 class="text-xl font-extrabold text-slate-900 mb-3">Prática + Vivência Real</h3>
+<h3 class="text-xl font-extrabold text-slate-900 mb-3 mt-2">Prática + Vivência Real</h3>
 <ul class="space-y-2">
 <li class="flex items-start gap-2 text-slate-700 text-sm font-medium">
 <span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">groups</span>
