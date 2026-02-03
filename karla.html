@@ -72,6 +72,10 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        .material-filled {
+             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
         .hero-overlay {
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
         }
@@ -98,45 +102,47 @@
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </nav>
-<section class="relative min-h-[700px] flex items-center px-6 pt-12 pb-20 overflow-hidden">
+<section class="relative min-h-[800px] grid items-end px-6 pt-12 pb-20 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img alt="Karla Nachtajler" class="w-full h-full object-cover object-center" src="capa.jpg"/>
 <div class="absolute inset-0 hero-overlay"></div>
 </div>
 <div class="relative z-10 w-full space-y-8 mt-10">
-<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md">
-<div class="size-2 rounded-full bg-accent"></div>
-<span class="text-[10px] font-bold text-white uppercase tracking-widest">Mentoria de Carreira Elite</span>
-</div>
-<h1 class="text-4xl font-bold leading-[1.1] text-white">
-                    Te ajudo a transformar sua trajetória no <span class="font-serif italic text-accent">Mercado Financeiro</span>
+<h1 class="text-4xl font-bold leading-[1.1] text-white/75">
+  Te ajudo a transformar sua trajetória no
+  <span class="font-serif text-[#E6C17A]"> Mercado Financeiro</span>
 </h1>
+
+
 <div class="flex flex-col gap-3">
-<button class="w-full bg-accent text-white font-bold py-4 rounded-xl shadow-lg shadow-accent/20 text-base">
+<button class="w-full bg-accent hover:bg-[#E6C17A] text-white font-bold py-4 rounded-xl shadow-lg shadow-accent/20 text-base">
                         Agendar mentoria
                     </button>
-<button class="w-full bg-transparent border-2 border-white/40 text-white font-bold py-4 rounded-xl text-base backdrop-blur-sm">
+<button class="w-full bg-white/10 border-2 border-white/40 text-white font-bold py-4 rounded-xl text-base backdrop-blur-sm">
                         Conheça minha história
                     </button>
 </div>
-<div class="p-6 rounded-3xl bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 mt-8">
+<div class="p-4 rounded-3xl bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 mt-8">
 <h3 class="text-2xl font-bold text-accent">+200 sonhos</h3>
 <p class="text-white/70 text-sm mt-1 mb-4">transformados em crachás</p>
 <div class="flex items-center justify-between">
 <div class="flex -space-x-3">
 <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
+<div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
+<div class="size-10 rounded-full border-2 border-slate-800 bg-slate-200 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNGGMdAQ-xBiuAZMCLbSMPIaPUgBGi-QisgKK5EpVOJrU7YHJz7Iggba20FQy0SxBo8on16P81F48ikkKCN_mKYjzQNaVCNTlRIaiufb2HFFCXrdjCz_SAex9ss4vQBfaY4JtZOI0Ps3SMLfZjqPMIShfkCJ5r_NPIXsGeeO5Bf4uGCqcG1eEhrpqhSoipagsFNGxP346019dprMYqNGaHFb1eg3oA3mhNxYOFBPSEkg71X7jb7RVBv9hr9eOIfpRoEEfAz8Arw"/></div>
 <div class="size-10 rounded-full border-2 border-slate-800 bg-slate-300 overflow-hidden"><img class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5YvRIpD88lWyjuO-bXCArcVBHo365tUXdkltpHU2AFxQTLmHxT1ceWRg4UPgq3kJgZrD2m3wdO1mOKeMmr7P5q7KpNTjVcIGcWTDtbf-fXaCptJm396RTOADT7cRe5v9slk2UKSsyr8Pqompz1efgmAvlFV1ki2kxebX2L2384RsvS5fKofaFUaxnaL5uT_LaJ4tZ_XXeDwUGD056m8s5zNSFBgaxXheK521SYAvY_T0Ly6Q2SYy0iI1avT4flvRKtJBS4lpFA"/></div>
 <div class="size-10 rounded-full border-2 border-slate-800 bg-accent flex items-center justify-center text-[10px] text-white font-bold">+196</div>
 </div>
-<div class="flex flex-col items-end">
+<div class="flex flex-col items-start">
 <div class="flex gap-0.5 text-accent">
-<span class="material-symbols-outlined text-[14px] fill-current">star</span>
-<span class="material-symbols-outlined text-[14px] fill-current">star</span>
-<span class="material-symbols-outlined text-[14px] fill-current">star</span>
-<span class="material-symbols-outlined text-[14px] fill-current">star</span>
-<span class="material-symbols-outlined text-[14px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[14px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[14px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[14px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[14px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[14px] fill-current">star</span>
 </div>
-<span class="text-[10px] font-bold text-white/50 tracking-widest uppercase mt-1">Sucesso Comprovado</span>
+<span class="text-[10px] font-bold text-white/50 tracking-widest uppercase mt-1">Sucesso</span>
+<span class="text-[10px] font-bold text-white/50 tracking-widest uppercase mt-1">Comprovado</span>
 </div>
 </div>
 </div>
@@ -307,11 +313,11 @@
 <div class="flex overflow-x-auto gap-4 pb-8 px-1 snap-x hide-scrollbar">
 <div class="min-w-[300px] bg-white p-6 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.05)] snap-center border border-slate-100">
 <div class="flex gap-0.5 text-accent mb-4">
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined material-filled text-[18px] fill-current">star</span>
 </div>
 <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
                             "A mentoria da Karla foi o divisor de águas. Eu não conseguia passar da primeira fase, e com o direcionamento dela, conquistei minha vaga dos sonhos em menos de 2 meses."
@@ -361,59 +367,140 @@
 </div>
 </div>
 </section>
+
 <section class="py-20 bg-white" id="metodologia">
-<div class="px-6 text-center mb-16">
-<span class="text-accent text-[10px] font-bold uppercase tracking-[0.2em]">O Método</span>
-<h2 class="text-3xl font-bold mt-2 text-slate-900 font-serif">Como funciona a Mentoria</h2>
-<div class="w-12 h-0.5 bg-accent mx-auto mt-4"></div>
+<div class="px-6 text-center mb-12">
+<span class="text-accent text-[10px] font-bold uppercase tracking-[0.2em]">A Jornada Guiada</span>
+<h2 class="text-3xl font-bold mt-2 text-slate-900 font-serif">Como funciona a mentoria</h2>
+<p class="text-slate-500 text-sm mt-3 leading-relaxed">Um acompanhamento estruturado, humano e focado em aprovação.</p>
+<div class="w-12 h-0.5 bg-accent mx-auto mt-6"></div>
 </div>
-<div class="px-8 space-y-12">
-<div class="relative flex gap-6 step-line">
-<div class="z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">
-                        1
+<div class="px-6 space-y-12 mb-16">
+<div class="relative flex gap-5 step-line">
+<div class="z-10 flex size-8 shrink-0 items-center justify-center rounded-full bg-accent text-white font-bold text-sm shadow-md">
+                        01
                     </div>
-<div class="pt-1">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Diagnóstico</h3>
-<p class="text-slate-500 text-sm leading-relaxed">
-                            Avaliação profunda do seu perfil profissional atual e mapeamento detalhado de gaps técnicos e comportamentais para o mercado.
-                        </p>
+<div class="pt-0.5">
+<h3 class="text-lg font-extrabold text-slate-900 mb-3">Diagnóstico e Posicionamento</h3>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Reestruturação do currículo</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Reestruturação do LinkedIn</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Alinhamento de perfil ao cargo</span>
+</li>
+</ul>
 </div>
 </div>
-<div class="relative flex gap-6 step-line">
-<div class="z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">
-                        2
+<div class="relative flex gap-5 step-line">
+<div class="z-10 flex size-8 shrink-0 items-center justify-center rounded-full bg-accent text-white font-bold text-sm shadow-md">
+                        02
                     </div>
-<div class="pt-1">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Estratégia</h3>
-<p class="text-slate-500 text-sm leading-relaxed">
-                            Criação de roadmaps personalizados, otimização estratégica do seu perfil no LinkedIn e reformulação de CV focado em alta conversão.
-                        </p>
+<div class="pt-0.5">
+<h3 class="text-lg font-extrabold text-slate-900 mb-3">Preparação Estratégica</h3>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Mentoria individual (1h30)</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Plano de ação focado em entrevista</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Estudo do cargo, produtos e serviços bancários</span>
+</li>
+</ul>
+
 </div>
 </div>
-<div class="relative flex gap-6 step-line">
-<div class="z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">
-                        3
+<div class="relative flex gap-5 step-line">
+<div class="z-10 flex size-8 shrink-0 items-center justify-center rounded-full bg-soft-navy text-white font-bold text-sm shadow-md">
+                        03
                     </div>
-<div class="pt-1">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Treinamento</h3>
-<p class="text-slate-500 text-sm leading-relaxed">
-                            Simulações reais de entrevistas com feedback imediato e preparação técnica/comportamental intensiva para os processos mais exigentes.
-                        </p>
+<div class="pt-0.5 bg-slate-50 p-5 rounded-2xl border border-primary/10 shadow-sm -ml-2 -mt-2">
+<h3 class="text-xl font-extrabold text-slate-900 mb-3">Prática + Vivência Real</h3>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-slate-700 text-sm font-medium">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">groups</span>
+<span>Mentoria em grupo</span>
+</li>
+<li class="flex items-start gap-2 text-slate-700 text-sm font-medium">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">chat</span>
+<span>Networking via WhatsApp</span>
+</li>
+<li class="flex items-start gap-2 text-slate-700 text-sm font-medium">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">person_add</span>
+<span>Contato com profissionais do cargo desejado</span>
+</li>
+<li class="flex items-start gap-2 text-slate-700 text-sm font-medium">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">record_voice_over</span>
+<span>Simulações reais de entrevista</span>
+</li>
+</ul>
 </div>
 </div>
-<div class="relative flex gap-6 step-line-last">
-<div class="z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">
-                        4
+<div class="relative flex gap-5 step-line-last">
+<div class="z-10 flex size-8 shrink-0 items-center justify-center rounded-full bg-accent text-white font-bold text-sm shadow-md">
+                        04
                     </div>
-<div class="pt-1">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Conquista</h3>
-<p class="text-slate-500 text-sm leading-relaxed">
-                            Suporte completo na negociação salarial e orientação estratégica para sua integração bem-sucedida na nova carreira.
-                        </p>
+<div class="pt-0.5">
+<h3 class="text-lg font-extrabold text-slate-900 mb-3">Acompanhamento até a aprovação</h3>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Até 120 dias de acompanhamento</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Flexibilidade de horários</span>
+</li>
+<li class="flex items-start gap-2 text-slate-600 text-sm">
+<span class="material-symbols-outlined material-filled text-accent text-sm mt-0.5">check_circle</span>
+<span>Suporte emocional pré-entrevista</span>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
+<div class="mx-6 p-8 rounded-3xl bg-soft-navy text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<h3 class="text-xl font-bold text-accent mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">stars</span>
+                    Diferenciais da mentoria
+                </h3>
+<div class="space-y-5 relative z-10">
+<div class="flex items-start gap-3">
+<span class="text-accent font-bold">✔</span>
+<p class="text-sm font-medium">Conversa 1:1 com profissional do cargo desejado</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-accent font-bold">✔</span>
+<p class="text-sm font-medium">Preparação emocional para entrevistas decisivas</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-accent font-bold">✔</span>
+<p class="text-sm font-medium">Rede ativa de alunos e profissionais do mercado</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-accent font-bold">✔</span>
+<p class="text-sm font-medium">Acompanhamento real até a contratação</p>
+</div>
+</div>
+</div>
+<p class="text-center text-slate-500 font-serif italic text-base mt-12 px-10 leading-relaxed">
+                "O mercado não abre portas para quem insiste. Abre para quem se prepara."
+            </p>
 </section>
+
 <section class="px-6 py-24 bg-slate-900 text-white text-center rounded-t-[40px]" id="contato">
 <div class="flex justify-center mb-6">
 <span class="material-symbols-outlined text-accent text-5xl fill-current">stars</span>
